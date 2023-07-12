@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root {
+    --primary-color: rgb(0 71 189) ;
+    --color-white: #ffffff;
+    --color-black: #171717;
+    --color-gray: #585858;
+    --color-light-gray: #a2a2a2;
+    --color-red: #c60001;
+    --font-weight-700: 700;
+}
+body {
+    margin: 0px;
+    box-sizing: border-box; 
+    background-color: #0a0b0a;
+    font-family: 'Poppins', sans-serif;
+}
+p,
+a,
+span,
+ul,
+li,
+ol,
+label,
+button {
+    font-size: 14px;
+    color: var(--color-gray);
+    font-weight: 500;
+    line-height: 25px;
+}
+
+input[type = text], input[type = time], .form-select, .card-radio .form-check-label{
+    background-color: rgb(0 71 189 / 11%) !important;
+    border: 1px solid rgb(0 71 189 / 30%) !important;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px !important;
+    border: solid 2px transparent;
+    transition: 0.3s all linear;
+    padding-left: 25px;
+    font-size: 13px;
+    color: var(--primary-color);
+    font-weight: 500;
+    box-shadow: none !important;
+}
+input:focus{
+    color: var(--primary-color) !important;
+}
+.form-select option{
+    background-color: var(--color-white);
+    border-radius: 50px;
+}
+.form-select option:hover{
+    background-color: var(--primary-color);
+}
+.form-check-input:focus, button:focus{
+    box-shadow: none !important;
+}
+.form-check-input:checked{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color) !important;
+}
+
+label{
+    margin-bottom: 5px;
+}
+label .requried{
+    color: var(--color-red);
+    white-space: break-spaces;
+}
+th{
+    font-weight: 600;
+}
+th, td{
+    padding: 10px !important;
+    font-size: 14px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.p-20{
+    padding: 20px;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-weight-600{
+    font-weight: 600;
+}
+.bg-red{
+    background-color: var(--color-red);
+}
+.text-black{
+    color: var(--color-black);
+}
+.text-red{
+    color: var(--color-red);
+}
+.text-white{
+    color: var(--color-white);
+}
+.text-main{
+    color: var(--primary-color);
+}
+.opacity-04{
+    opacity: 0.4;
+}
+.delete-row:hover{
+    color: var(--color-red);
+}
+.white-space-nowrap{
+    white-space: nowrap;
+}
+.modal-content{
+    border-radius: 20px;
+}
+.btn{
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.btn-site{
+    background-color: var(--primary-color);
+    
+    color: var(--color-white);
+}
+.btn-site, .btn-site:hover{
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+.btn-cancel{
+    background-color: var(--color-light-gray);
+    color: var(--color-white);
+}
+.btn-close{
+    line-height: 1em;
+    background: #f6f6f6 !important;
+    border: 1px solid #ececec;
+    opacity: 0.7;
+}
+.main{
+    background-image: url(../images/bg/main-bg.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main-wrapper {
+    padding: 40px;
+}
+.main-area {
+    border-radius: 40px;
+    background: rgb(255,255,255);
+    background: linear-gradient(45deg, rgba(0,71,189,.3) -200%, rgba(255,255,255,1) 75%, rgba(0,71,189,.8) 200%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    min-height: 500px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.main-area .logo .brand-logo{
+    width: 22%;
+}
+.main-area .main-title{
+    font-size: 30px;
+}
+/* Step Form :: Strat */
+.wizard{
+    position: relative;
+}
+.wizard > .content > .body{
+    width: 100%;
+    position: relative;
+}
+.wizard > .steps {
+    position: absolute;
+}
+.wizard > .steps > ul > li {
+    width: auto;
+}
+.wizard > .steps a, .wizard > .steps a:hover, .wizard > .steps a:active{
+    margin: 0;
+    padding: 0;
+    height: 0px;
+    color: transparent !important;
+
+}
+.wizard > .steps > ul > li a .number{
+    display: none;
+}
+
+.wizard > .content{
+    margin: 0.5em 0;
+    background: transparent;
+}
+.wizard > .content > .body{
+    padding: 0;
+}
+.wizard > .actions > ul{
+    display: flex;
+    justify-content: space-between;
+}
+.wizard > .actions > ul li a, .wizard > .actions > ul li a:hover{
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.wizard > .actions > ul li:nth-child(1) a, .wizard > .actions > ul li:nth-child(1) a:hover{
+    background: #ccc;
+    color: var(--color-gray);
+}
+.wizard > .actions .disabled a{
+    display: none;
+}
+.wizard > .actions > ul li:nth-child(2) a, .wizard > .actions > ul li:nth-child(3) a{
+    background: var(--primary-color);
+}
+/* Step Form :: End */
+
+/* Check-box Design :: Start */
+.card-radio .form-check-label {
+    width: 100%;
+    height: auto;
+    padding: 10px 15px 10px 25px;
+    position: relative;
+    line-height: 0;
+    align-items: center;
+
+}
+.card-radio .form-check-label span{
+    color: var(--primary-color);
+}
+.card-radio .form-check-input:checked + .form-check-label:before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Pro";
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    font-size: 16px;
+    color: #148f50;
+    transform: translate(-50%, -50%);
+}
+.card-radio .form-check-input:checked + .form-check-label {
+    border-color: #148f50 !important;
+    border: 1.5px dashed #148f50!important;
+}
+/* Check-box Design :: End */
+
+.title-box{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-table thead{
+    background: rgb(0 71 189 / 20%);
+}
+.form-table thead tr{
+    border-style: hidden;
+}
+.payment-card {
+    background: rgb(0 71 189 / 10%);
+    border-radius: 10px;
+    padding: 47px;
+    border: 1px dashed var(--primary-color);
+}
+
+/* Modal Design :: Start */
+.delete-modal .modal-body{
+    padding: 40px 60px;
+}
+.delete-modal .modal-body img{
+    width: 22%;
+}
+/* Modal Design :: End */
+
+/* Media query :: Start */
+
+@media only screen and (max-width: 1199px) {
+    .main-area .logo .brand-logo {
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .main-area .logo{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .main-area .logo .brand-logo {
+        width: 35%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .container{
+        max-width: 960px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .form-group{
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main-wrapper {
+        padding: 10px;
+    }
+    .main-area{
+        padding: 20px 10px;
+    }
+    .main-area .logo .brand-logo {
+        width: 50%;
+    }
+}
+/* Media query :: End */
